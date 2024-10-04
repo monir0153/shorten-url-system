@@ -26,12 +26,10 @@
                     </form>
                     @if (session('url'))
                         <p class="dark:text-gray-100 text-gray-800">
-                            Short URL: <a
-                                href="{{ url('/') . '/' . session('url.short_url') }}">{{ session('url.short_url') }}</a>
+                            Short URL: {{ session('url.short_url') }}
                         </p>
                         <p class="dark:text-gray-100 text-gray-800">
-                            Main URL: <a href="{{ session('url.main_url') }}"
-                                target="_blank">{{ session('url.main_url') }}</a>
+                            Main URL: {{ session('url.main_url') }}
                         </p>
                     @endif
                 </div>
